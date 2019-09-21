@@ -19,8 +19,8 @@ class Stack
   def pop
     return print "nil\n" if @data.nil?
     value = @data.value
+    puts value
     @data = @data.next_node
-    value
   end
 end
 
