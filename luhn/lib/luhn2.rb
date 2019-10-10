@@ -21,7 +21,9 @@ class Luhn
       return "Valid!"
     else
       return "Not Valid"
+    end
   end
+
 end
 
 num = Luhn.new(num) 
