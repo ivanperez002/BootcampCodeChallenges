@@ -3,19 +3,15 @@ module Luhn
     
     num = num.digits
 
-    num.map.with_index do |x,i|
+    num.map!.with_index do |x,i|
       i.odd? ? x * 2 : x
     end
 
-    num.map do |x|
+    num.map! do |x|
       x >= 10 ? x - 9 : x
     end
 
-    if num.sum.modulo(10) == 0
-      puts true
-    else
-      puts false
-    end
+    num.sum.modulo(10) == 0
   end
 
 end
