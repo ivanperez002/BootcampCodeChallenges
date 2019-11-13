@@ -1,10 +1,11 @@
-def fibonacci(n)
-  fib = [0,1]
-  if n == 0
-    return fib[0]
-  elsif n == 1
-    return fib
+def fib(num)
+  if num == 0
+    return 0
+  elsif num == 1
+    return 1
   else
-    fib_n = 
+    return fib(num-1) + fib(num-2)
+  end
+end
 
-puts fibonacci(9)
+puts fib(9)
